@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Recipe Sharing App - Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./lib/nav/nav.css" />
+    <link rel="stylesheet" href="./lib/login/login.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./Index.html">RecipeShare</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+            <li class="nav-item d-flex align-items-center ms-3">
+              <a
+                class="nav-link p-0"
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <i class="bi bi-github fs-4"></i>
+              </a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center ms-3">
+              <button
+                id="darkModeToggle"
+                class="btn btn-outline-secondary btn-sm"
+                aria-label="Toggle Dark Mode"
+                title="Toggle Dark Mode"
+              >
+                🌙
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Section -->
+    <div class="container mt-5 login-form">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg rounded-4">
+              <div class="card-body p-4">
+                <h3 class="card-title text-center mb-4">Login Now</h3>
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Create a password"
+                      required
+                    />
+                  </div>
+                  
+                  <a href="./profile.html" class="btn btn-outline-primary w-100">
+                    Login
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/nav/nav.js"></script>
+  </body>
+</html>
