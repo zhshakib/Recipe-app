@@ -1,5 +1,12 @@
 body.dark-mode .coini-text {
-
     color: #9a9696 !important;
-
   }
+
+
+  @media (min-width: 992px) { 
+    .profile .container {
+        max-width: 600px; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
