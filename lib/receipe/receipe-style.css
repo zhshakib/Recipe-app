@@ -1,3 +1,12 @@
+.recipe-details{
+    background: #191919;
+    color: #fff;
+}
+
+.r-name{
+    width: 100%;
+}
+
 /* Image */
 .recipe-image-container {
     position: relative;
@@ -39,6 +48,11 @@
 
 [data-bs-theme="dark"] .author-info {
     color: #f8f9fa;
+}
+
+body.dark-mode .recipe-details{
+    color: #FFF ;
+    background: #191919;
 }
 
 
