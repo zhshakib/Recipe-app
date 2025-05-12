@@ -1,190 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>Recipe Sharing App - Navbar</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./lib/nav/nav.css" />
-    <link rel="stylesheet" href="./lib/cards/card.css">
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">RecipeShare</a>
+  <title>Recipe Sharing App - Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./lib/receipe/receipe-style.css">
+  <link rel="stylesheet" href="./lib/cards/card.css">
+  <link rel="stylesheet" href="./lib/nav/nav.css" />
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">RecipeShare</a>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarContent"
-        >
-          <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
-            <li class="nav-item d-flex align-items-center ms-3">
-              <a
-                class="nav-link p-0"
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                title="GitHub"
-              >
-                <i class="bi bi-github fs-4"></i>
-              </a>
-            </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <li class="nav-item d-flex align-items-center ms-3">
-              <button
-                id="darkModeToggle"
-                class="btn btn-outline-secondary btn-sm"
-                aria-label="Toggle Dark Mode"
-                title="Toggle Dark Mode"
-              >
-                🌙
-              </button>
-            </li>
-            <li class="nav-item d-flex align-items-center ms-3">
-              <a href="./login.html" class="btn btn-outline-info flat-border-bt">Login</a>
-            </li>
-          </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+          <li class="nav-item d-flex align-items-center ms-3">
+            <a class="nav-link p-0" href="https://github.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub" title="GitHub">
+              <i class="bi bi-github fs-4"></i>
+            </a>
+          </li>
+
+          <li class="nav-item d-flex align-items-center ms-3">
+            <button id="darkModeToggle" class="btn btn-outline-secondary btn-sm" aria-label="Toggle Dark Mode"
+              title="Toggle Dark Mode">
+              🌙
+            </button>
+          </li>
+          <li class="nav-item d-flex align-items-center ms-3">
+            <a href="./login.html" class="btn btn-outline-info flat-border-bt">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cards Section -->
+
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="recipe-card h-100">
+          <img
+            src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_1920,c_limit/Smashburger-recipe-120219.jpg"
+            class="card-img-top" alt="Recipe 1" />
+          <div class="recipe-card-body">
+            <h5 class="recipe-title">Delicious Pasta</h5>
+            <p class="recipe-description">
+              A simple and flavorful pasta dish perfect for a weeknight meal.
+            </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal-1">
+              View Recipe
+            </button>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <!-- Cards Section -->
-
-    <div class="container mt-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="recipe-card h-100">
-            <img
-              src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_1920,c_limit/Smashburger-recipe-120219.jpg"
-              class="card-img-top w-5"
-              alt="Recipe 1"
-            />
-            <div class="recipe-card-body">
-              <h5 class="recipe-title">Delicious Pasta</h5>
-              <p class="recipe-description">
-                A simple and flavorful pasta dish perfect for a weeknight meal.
-              </p>
-              <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
-            </div>
+      <div class="col">
+        <div class="recipe-card h-100">
+          <img
+            src="https://www.thelittleepicurean.com/wp-content/uploads/2020/01/classic-chocolate-cake-horizontal-feature.jpg"
+            class="card-img-top" alt="Recipe 3" />
+          <div class="recipe-card-body">
+            <h5 class="recipe-title">Classic Chocolate Cake</h5>
+            <p class="recipe-description">
+              A rich and moist chocolate cake that's perfect for any
+              celebration.
+            </p>
+            <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
           </div>
         </div>
-        
-        <div class="col">
-          <div class="recipe-card h-100">
-            <img
-              src="https://www.thelittleepicurean.com/wp-content/uploads/2020/01/classic-chocolate-cake-horizontal-feature.jpg"
-              class="card-img-top"
-              alt="Recipe 3"
-            />
-            <div class="recipe-card-body">
-              <h5 class="recipe-title">Classic Chocolate Cake</h5>
-              <p class="recipe-description">
-                A rich and moist chocolate cake that's perfect for any
-                celebration.
-              </p>
-              <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
-            </div>
+      </div>
+      <div class="col">
+        <div class="recipe-card h-100">
+          <img src="https://miakouppa.com/wp-content/uploads/2024/01/Chicken-stir-fry-edited-2-500x500.jpg"
+            class="card-img-top" alt="Recipe 2" />
+          <div class="recipe-card-body">
+            <h5 class="recipe-title">Easy Chicken Stir-Fry</h5>
+            <p class="recipe-description">
+              A quick and healthy stir-fry packed with vegetables and tender
+              chicken.
+            </p>
+            <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
           </div>
         </div>
-        <div class="col">
-            <div class="recipe-card h-100">
-              <img
-                src="https://miakouppa.com/wp-content/uploads/2024/01/Chicken-stir-fry-edited-2-500x500.jpg"
-                class="card-img-top"
-                alt="Recipe 2"
-              />
-              <div class="recipe-card-body">
-                <h5 class="recipe-title">Easy Chicken Stir-Fry</h5>
-                <p class="recipe-description">
-                  A quick and healthy stir-fry packed with vegetables and tender
-                  chicken.
-                </p>
-                <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
+      </div>
+      <div class="col">
+        <div class="recipe-card h-100">
+          <img src="https://www.foodnetwork.com/content/dam/images/food/fullset/2007/4/27/0/ei1005_tomatoesoup.jpg"
+            class="card-img-top" alt="Recipe 4" />
+          <div class="recipe-card-body">
+            <h5 class="recipe-title">Spicy Tomato Soup</h5>
+            <p class="recipe-description">
+              A comforting and flavorful tomato soup with a hint of spice.
+            </p>
+            <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="recipe-card h-100">
+          <img src="https://feelgoodfoodie.net/wp-content/uploads/2017/10/Fresh-Fruit-Salad-06.jpg" class="card-img-top"
+            alt="Recipe 5" />
+          <div class="recipe-card-body">
+            <h5 class="recipe-title">Refreshing Fruit Salad</h5>
+            <p class="recipe-description">
+              A light and refreshing mix of seasonal fruits, perfect for a
+              healthy snack.
+            </p>
+            <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="recipe-card h-100">
+          <img
+            src="https://www.allrecipes.com/thmb/XkapTqFUR4U_fMMZQwgikkuoL-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-281995-ClassicHeartyBeefStew-ddmfs-3x4-6957-660344f4e4c8417fa6d1cf3175e0202c.jpg"
+            class="card-img-top" alt="Recipe 6" />
+          <div class="recipe-card-body">
+            <h5 class="recipe-title">Hearty Beef Stew</h5>
+            <p class="recipe-description">
+              A slow-cooked beef stew with tender vegetables in a rich gravy.
+            </p>
+            <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-3 mt-5 text-center">
+    <div class="container ">
+      <p class="mb-0">Made with ❤️ By <a href="https://github.com/zhshakib/Recipe-app" target="_blank"
+          style="font-size: 20px;" class="text-decoration-none fw-bold text-warning">Team-Hizibizi</a></p>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="recipeModal-1" tabindex="-1" aria-labelledby="recipeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="recipe-details">
+        <div class="container mt-2">
+          <div class="row">
+            <div class="col-md-12 text-center mb-3 d-flex justify-content-between align-items-center">
+              <h1 class="display-6 r-name">Cashew Nut Salad</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>	
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mb-4">
+              <div class="recipe-image-container">
+                <img src="./assets/imgs/recipee-1.jpg" alt="Cashew Nut Salad" class="recipe-image">
               </div>
             </div>
           </div>
-        <div class="col">
-          <div class="recipe-card h-100">
-            <img
-              src="https://www.foodnetwork.com/content/dam/images/food/fullset/2007/4/27/0/ei1005_tomatoesoup.jpg"
-              class="card-img-top"
-              alt="Recipe 4"
-            />
-            <div class="recipe-card-body">
-              <h5 class="recipe-title">Spicy Tomato Soup</h5>
-              <p class="recipe-description">
-                A comforting and flavorful tomato soup with a hint of spice.
+
+          <div class="row mb-3">
+            <div class="col-md-12 text-center">
+              <p class="author-info">
+                Author: <span class="fw-bold">Coini</span> |
+                Likes: <span class="fw-bold">999</span> |
+                Published: <span class="fw-bold">May 8, 2025</span>
               </p>
-              <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="recipe-card h-100">
-            <img
-              src="https://feelgoodfoodie.net/wp-content/uploads/2017/10/Fresh-Fruit-Salad-06.jpg"
-              class="card-img-top"
-              alt="Recipe 5"
-            />
-            <div class="recipe-card-body">
-              <h5 class="recipe-title">Refreshing Fruit Salad</h5>
-              <p class="recipe-description">
-                A light and refreshing mix of seasonal fruits, perfect for a
-                healthy snack.
-              </p>
-              <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="recipe-card h-100">
-            <img
-              src="https://www.allrecipes.com/thmb/XkapTqFUR4U_fMMZQwgikkuoL-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-281995-ClassicHeartyBeefStew-ddmfs-3x4-6957-660344f4e4c8417fa6d1cf3175e0202c.jpg"
-              class="card-img-top"
-              alt="Recipe 6"
-            />
-            <div class="recipe-card-body">
-              <h5 class="recipe-title">Hearty Beef Stew</h5>
-              <p class="recipe-description">
-                A slow-cooked beef stew with tender vegetables in a rich gravy.
-              </p>
-              <a href="./receipe-details.html" class="recipe-link">View Recipe</a>
+
+          <div class="row">
+            <div class="col-md-12 container">
+              <h3 class="text-center">Description</h3>
+              <p class="block-quote">Enjoy this delicious and easy Cashew Nut Salad recipe! This salad is perfect for a
+                light lunch or a side dish. It's packed with fresh flavors and the crunchiness of cashew nuts.</p>
+              <p><b>Prep Time:</b> 15 mins</p>
+              <h3>Ingredients</h3>
+              <ul>
+                <li>2 cups mixed salad greens</li>
+                <li>½ cup roasted cashew nuts</li>
+                <li>½ cup sliced cucumber</li>
+                <li>½ cup halved cherry tomatoes</li>
+                <li>¼ cup thinly sliced red onion</li>
+                <li>2 tablespoons olive oil</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+
+              <h3>Instructions</h3>
+              <ol>
+                <li>In a bowl, combine salad greens, cashews, cucumber, tomatoes, and red onion.</li>
+                <li>In a small bowl, whisk together olive oil and lemon juice. Season with salt and pepper.</li>
+                <li>Pour dressing over the salad and toss gently. Serve immediately.</li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="py-3 mt-5 text-center">
-      <div class="container ">
-        <p class="mb-0">Made with ❤️ By <a href="https://github.com/zhshakib/Recipe-app" target="_blank" style="font-size: 20px;" class="text-decoration-none fw-bold text-warning">Team-Hizibizi</a></p>
-      </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./lib/nav/nav.js"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/nav/nav.js"></script>
+</body>
+
 </html>
