@@ -73,66 +73,127 @@
       </div>
     </nav>
 
-    <!-- Post Details Section -->
+    <!-- Recipe Details Section -->
 
     <section class="recipe-details">
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-12 text-center mb-3">
-                    <h1 class="display-6">Cashew Nut Salad</h1>
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-md-12 mb-4">
-                    <div class="recipe-image-container">
-                        <img src="./assets/imgs/recipee-1.jpg" alt="Cashew Nut Salad" class="recipe-image">
-                        </div>
-                </div>
-            </div>
-    
-            <div class="row mb-3">
-                <div class="col-md-12 text-center">
-                    <p class="author-info">
-                        Author: <span class="fw-bold">Coini</span> |
-                        Likes: <span class="fw-bold">999</span> |
-                        Published: <span class="fw-bold">May 8, 2025</span>
-                    </p>
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-md-12 container">
-                    <h3 class="text-center">Description</h3>
-                    <p class="block-quote">Enjoy this delicious and easy Cashew Nut Salad recipe! This salad is perfect for a light lunch or a side dish. It's packed with fresh flavors and the crunchiness of cashew nuts.</p>
-                    <p><b>Prep Time:</b> 15 mins</p>
-                    <h3>Ingredients</h3>
-                    <ul>
-                        <li>2 cups mixed salad greens</li>
-                        <li>½ cup roasted cashew nuts</li>
-                        <li>½ cup sliced cucumber</li>
-                        <li>½ cup halved cherry tomatoes</li>
-                        <li>¼ cup thinly sliced red onion</li>
-                        <li>2 tablespoons olive oil</li>
-                        <li>Salt and pepper to taste</li>
-                    </ul>
-    
-                    <h3>Instructions</h3>
-                    <ol>
-                        <li>In a bowl, combine salad greens, cashews, cucumber, tomatoes, and red onion.</li>
-                        <li>In a small bowl, whisk together olive oil and lemon juice. Season with salt and pepper.</li>
-                        <li>Pour dressing over the salad and toss gently. Serve immediately.</li>
-                    </ol>
-                </div>
-            </div>
+      <div class="container pt-5 px-3">
+        <div class="row">
+          <div class="col-md-12 text-center mb-3">
+            <h1 class="display-6">Cashew Nut Salad</h1>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <div class="recipe-image-container">
+              <img
+                src="./assets/imgs/recipee-1.jpg"
+                alt="Cashew Nut Salad"
+                class="recipe-image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-12 text-center">
+            <p class="author-info">
+              Author: <span class="fw-bold">Coini</span> | Likes:
+              <span class="fw-bold">999</span> | Published:
+              <span class="fw-bold">May 8, 2025</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 container">
+            <h3 class="text-center">Description</h3>
+            <p class="block-quote">
+              Enjoy this delicious and easy Cashew Nut Salad recipe! This salad
+              is perfect for a light lunch or a side dish. It's packed with
+              fresh flavors and the crunchiness of cashew nuts.
+            </p>
+            <p><b>Prep Time:</b> 15 mins</p>
+            <div class="d-flex justify-content-between">
+              <h3>Ingredients</h3>
+              <button
+                type="button"
+                class="btn btn-info"
+                data-bs-toggle="modal"
+                data-bs-target="#ingredientsModal"
+              >
+                View Ingredients
+              </button>
+            </div>
+            <h3 class="mt-3">Instructions</h3>
+            <ol>
+              <li>
+                In a bowl, combine salad greens, cashews, cucumber, tomatoes,
+                and red onion.
+              </li>
+              <li>
+                In a small bowl, whisk together olive oil and lemon juice.
+                Season with salt and pepper.
+              </li>
+              <li>
+                Pour dressing over the salad and toss gently. Serve immediately.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="py-3 mt-5 text-center">
-      <div class="container ">
-        <p class="mb-0">Made with ❤️ By <a href="https://github.com/zhshakib/Recipe-app" target="_blank" style="font-size: 20px;" class="text-decoration-none fw-bold text-warning">Team-Hizibizi</a></p>
+      <div class="container">
+        <p class="mb-0">
+          Made with ❤️ By
+          <a
+            href="https://github.com/zhshakib/Recipe-app"
+            target="_blank"
+            style="font-size: 20px"
+            class="text-decoration-none fw-bold text-warning"
+            >Team-Hizibizi</a
+          >
+        </p>
       </div>
     </footer>
+
+    <div
+      class="modal fade ingredient"
+      id="ingredientsModal"
+      tabindex="-1"
+      aria-labelledby="ingredientsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ingredientsModalLabel">Ingredients</h5>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>2 cups mixed salad greens</li>
+              <li>½ cup roasted cashew nuts</li>
+              <li>½ cup sliced cucumber</li>
+              <li>½ cup halved cherry tomatoes</li>
+              <li>¼ cup thinly sliced red onion</li>
+              <li>2 tablespoons olive oil</li>
+              <li>Salt and pepper to taste</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./lib/nav/nav.js"></script>

@@ -1,6 +1,6 @@
 .recipe-details{
-    background: #191919;
-    color: #fff;
+    background: #fff;
+    color: #191919;
 }
 
 .r-name{
@@ -53,6 +53,11 @@
 body.dark-mode .recipe-details{
     color: #FFF ;
     background: #191919;
+}
+
+body.dark-mode .modal-content {
+    background-color: #191919;
+    color: #fff;
 }
 
 
